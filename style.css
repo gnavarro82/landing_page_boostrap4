@@ -1,0 +1,41 @@
+body, html{
+    height: 100%;/*para que la imagen abaque todo*/
+    /*quitar espacios por defecto del navegador*/
+    margin: 0;
+    padding: 0;
+}
+header{
+
+}
+body{
+    /*primerpo se aplica el degradado*/
+    background:linear-gradient(rgba(95,114,190, .8), rgba(155,35,234, .7)), url('img/bg.jpg');
+    
+    background-size: cover;/*Abarca toda la pagina*/
+    background-position: center;/*contendio centrado*/
+    color: #fff;
+}
+/*css al logotipo*/
+.logo{
+    height: 40px;
+    margin-top:20px; 
+}
+/*css al texrto*/
+
+.text-description{
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+/*Sobreescribiendo una clase de boostrap*/
+.form-control{
+    background: transparent !important;/*fondo transparaente*/
+    /*se indica !important para que sobreescriba la clase de boostrap*/
+    /*para que funcione estos estilos deben cargarse al final desde de los de boostrap y la librerias*/
+    color: #fff !important;
+}
+/*estilizamndo los iconos de fontansoe*/
+a .fab{
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+}
